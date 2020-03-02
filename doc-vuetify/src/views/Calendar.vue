@@ -33,7 +33,7 @@
           </v-toolbar>
         </v-sheet>
         <v-sheet heigth="600">
-          <v-calendar ref="calendar" v-model="focus" :type="type" @click:date="viewDay" @change="updateRange" :event-color="getEventColor" :events="events">
+          <v-calendar ref="calendar" v-model="focus" :type="type" @click:date="viewDay" @change="updateRange" :weekdays="weekdays" :event-color="getEventColor" :events="events">
           </v-calendar>
         </v-sheet>
       </v-col>
@@ -55,6 +55,7 @@ export default {
       week: 'Week',
       day: 'Day'
     },
+    weekdays: [1, 2, 3, 4, 5],
     color: 'primary',
     start: null,
     end: null,

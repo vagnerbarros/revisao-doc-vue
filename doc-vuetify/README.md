@@ -1,5 +1,9 @@
 # doc-vuetify
 
+## Preview
+
+http://calendar-vuetify.surge.sh/
+
 ## Project setup
 ```
 npm install
